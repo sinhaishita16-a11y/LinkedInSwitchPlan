@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sturlite Switch — 15-Day Launch Content Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        sturlite: {
+                            orange: '#FF6B00',
+                            navy: '#0F172A',
+                            charcoal: '#1E293B',
+                            softgray: '#F8FAFC',
+                            midgray: '#E2E8F0'
+                        }
+                    },
+                    letterSpacing: {
+                        tightest: '-.04em',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --sturlite-orange: #FF6B00;
+        }
+        body {
+            background-color: #FFFFFF;
+            color: #0F172A;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+
+        .editorial-border {
+            border-top: 2px solid #0F172A;
+        }
+        
+        .nav-link {
+            transition: color 0.2s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--sturlite-orange);
+        }
+
+        .filter-btn {
+            transition: all 0.2s ease;
+        }
+        .filter-btn.active {
+            background-color: var(--sturlite-orange);
+            color: white;
+            border-color: var(--sturlite-orange);
+        }
+
+        /* Mockup Styles */
+        .phone-mockup {
+            width: 320px;
+            height: 650px;
+            border-radius: 40px;
+            border: 12px solid #1E293B;
+            background-color: #000;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .carousel-container {
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .carousel-slide {
+            scroll-snap-align: start;
+            flex: 0 0 100%;
+        }
+
+        /* Fade In Animation */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, visibility;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        .exact-copy-text {
+            white-space: pre-wrap;
+            font-family: inherit;
+        }
+    </style>
+</head>
+<body class="relative">
+
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+        <div id="progress-bar" class="h-1 bg-sturlite-orange w-0 transition-all duration-150 absolute top-0 left-0"></div>
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-xs font-semibold tracking-widest text-sturlite-charcoal uppercase">
+            <div class="font-bold text-sturlite-orange tracking-tight text-sm">STURLITE SWITCH</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#need" class="nav-link hover:text-sturlite-orange">The Need</a>
+                <a href="#strategy" class="nav-link hover:text-sturlite-orange">The Strategy</a>
+                <a href="#content-system" class="nav-link hover:text-sturlite-orange">Content System</a>
+                <a href="#calendar" class="nav-link hover:text-sturlite-orange">15-Day Calendar</a>
+                <a href="#asset-map" class="nav-link hover:text-sturlite-orange">Asset Map</a>
+            </div>
+            <!-- Mobile Menu Toggle (Simplified for presentation) -->
+            <div class="md:hidden text-sturlite-orange">MENU</div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-32">
+        
+        <section id="need" class="max-w-5xl mx-auto px-6 py-24 fade-in-section">
+            <div class="mb-4 text-sm font-semibold tracking-widest text-sturlite-orange uppercase">01 / The Context</div>
+            
+            <div class="bg-sturlite-softgray p-8 md:p-12 border-l-4 border-sturlite-orange mt-12">
+                <div class="text-sm font-bold tracking-widest text-sturlite-orange uppercase mb-4">THE STRATEGIC NEED:</div>
+                <div class="text-3xl md:text-5xl font-bold tracking-tight text-sturlite-navy leading-snug">
+                    Move Sturlite Switch from a new category entrant to a credible electrical choice.
+                </div>
+            </div>
+        </section>
+
+        <section id="strategy" class="max-w-5xl mx-auto px-6 py-24 editorial-border fade-in-section">
+            <div class="mb-16 text-sm font-semibold tracking-widest text-sturlite-orange uppercase">02 / The Strategy</div>
+            
+            <div class="grid md:grid-cols-2 gap-x-16 gap-y-12 mb-24">
+                <div>
+                    <h3 class="text-sm font-bold tracking-widest text-gray-400 uppercase mb-4 border-b border-gray-200 pb-2">THE ASK</h3>
+                    <p class="text-2xl font-medium leading-tight text-sturlite-navy">
+                        Create enough launch momentum to make Sturlite Switch visible and desirable.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold tracking-widest text-gray-400 uppercase mb-4 border-b border-gray-200 pb-2">THE SOLUTION</h3>
+                    <p class="text-2xl font-medium leading-tight text-sturlite-navy">
+                        Build a 15-day narrative that moves people from attention to credibility, conversation and proof.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-4 text-lg md:text-xl font-bold tracking-wider text-sturlite-navy bg-gray-50 p-8 rounded-lg mb-32">
+                <span>NOTICE</span>
+                <span class="text-sturlite-orange">→</span>
+                <span>BELIEVE</span>
+                <span class="text-sturlite-orange">→</span>
+                <span>QUESTION</span>
+                <span class="text-sturlite-orange">→</span>
+                <span>PROVE</span>
+                <span class="text-sturlite-orange">→</span>
+                <span>REMEMBER</span>
+            </div>
+
+            <div class="mb-32">
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-8">
+                    BUILDING MOMENTUM.<br><span class="text-gray-400">NOT REPEATING ADS.</span>
+                </h1>
+                <p class="text-2xl font-medium leading-relaxed max-w-3xl mb-16 border-l-4 border-sturlite-orange pl-6">
+                    The launch should progressively change what people think about Sturlite Switch, not repeatedly tell them that it exists.
+                </p>
+
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <!-- Phase Cards -->
+                    <div class="p-6 bg-sturlite-softgray hover:bg-gray-100 transition-colors group">
+                        <div class="text-sturlite-orange font-bold text-sm mb-4">01 NOTICE</div>
+                        <div class="font-medium text-sturlite-navy group-hover:text-sturlite-orange transition-colors">Launch energy.</div>
+                    </div>
+                    <div class="p-6 bg-sturlite-softgray hover:bg-gray-100 transition-colors group">
+                        <div class="text-sturlite-orange font-bold text-sm mb-4">02 BELIEVE</div>
+                        <div class="font-medium text-sturlite-navy group-hover:text-sturlite-orange transition-colors">Brand credibility.</div>
+                    </div>
+                    <div class="p-6 bg-sturlite-softgray hover:bg-gray-100 transition-colors group">
+                        <div class="text-sturlite-orange font-bold text-sm mb-4">03 QUESTION</div>
+                        <div class="font-medium text-sturlite-navy group-hover:text-sturlite-orange transition-colors">Category conversation.</div>
+                    </div>
+                    <div class="p-6 bg-sturlite-softgray hover:bg-gray-100 transition-colors group">
+                        <div class="text-sturlite-orange font-bold text-sm mb-4">04 PROVE</div>
+                        <div class="font-medium text-sturlite-navy group-hover:text-sturlite-orange transition-colors">Human validation.</div>
+                    </div>
+                    <div class="p-6 bg-sturlite-softgray hover:bg-gray-100 transition-colors group">
+                        <div class="text-sturlite-orange font-bold text-sm mb-4">05 REMEMBER</div>
+                        <div class="font-medium text-sturlite-navy group-hover:text-sturlite-orange transition-colors">Launch recall.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-32 text-center bg-gray-50 py-16 px-6 rounded-2xl">
+                <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-sturlite-navy mb-12">
+                    EVERY POST MUST <span class="text-sturlite-orange">SOLVE A PROBLEM.</span>
+                </h1>
+                
+                <div class="flex flex-col items-center justify-center space-y-4 text-xl font-bold tracking-widest text-gray-400 mb-16">
+                    <div class="text-sturlite-navy">OBSERVATION</div>
+                    <div class="text-sturlite-orange">↓</div>
+                    <div class="text-sturlite-navy">TENSION</div>
+                    <div class="text-sturlite-orange">↓</div>
+                    <div class="text-sturlite-navy">PROVOCATION</div>
+                    <div class="text-sturlite-orange">↓</div>
+                    <div class="text-sturlite-navy">IDEA</div>
+                    <div class="text-sturlite-orange">↓</div>
+                    <div class="text-sturlite-navy">CONTENT</div>
+                    <div class="text-sturlite-orange">↓</div>
+                    <div class="text-sturlite-navy">PROOF</div>
+                </div>
+
+                <div class="text-left md:text-center max-w-2xl mx-auto space-y-4 text-lg font-medium text-gray-600">
+                    <p>No data without a strategic implication.</p>
+                    <p>No provocation without a real tension.</p>
+                    <p>No claim without proof.</p>
+                    <p>No product post without a reason to care.</p>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold mb-12">THE FOUR STRATEGIC ROUTES</h2>
+                <div class="space-y-8">
+                    <!-- Route 1 -->
+                    <div class="border border-gray-200 p-8 rounded-xl bg-white hover:shadow-lg transition-shadow">
+                        <div class="flex flex-wrap items-center gap-4 mb-6">
+                            <span class="bg-sturlite-navy text-white text-xs font-bold px-3 py-1 rounded-full">ROUTE 01</span>
+                            <h3 class="text-xl font-bold">THE BIG SWITCH</h3>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8 text-sm">
+                            <div class="space-y-4">
+                                <div><strong class="text-gray-400 block mb-1">OBSERVATION</strong><span class="text-lg text-sturlite-navy">Highly visible details are often treated as afterthoughts.</span></div>
+                                <div><strong class="text-gray-400 block mb-1">TENSION</strong><span class="text-lg text-sturlite-navy">The switch is small, but it is one of the most visible and frequently interacted-with elements in a room.</span></div>
+                            </div>
+                            <div class="space-y-4">
+                                <div><strong class="text-sturlite-orange block mb-1">PROVOCATION</strong><span class="text-2xl font-bold tracking-tight text-sturlite-navy leading-tight">WHY SHOULD THE SMALLEST DETAIL GET THE LEAST ATTENTION?</span></div>
+                                <div><strong class="text-gray-400 block mb-1">EVIDENCE</strong><span class="text-gray-600">Visually-led modular design options.</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Route 2 -->
+                    <div class="border border-gray-200 p-8 rounded-xl bg-white hover:shadow-lg transition-shadow">
+                        <div class="flex flex-wrap items-center gap-4 mb-6">
+                            <span class="bg-sturlite-navy text-white text-xs font-bold px-3 py-1 rounded-full">ROUTE 02</span>
+                            <h3 class="text-xl font-bold">NEW ON THE WALL. NOT NEW TO ELECTRICALS.</h3>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8 text-sm">
+                            <div class="space-y-4">
+                                <div><strong class="text-gray-400 block mb-1">OBSERVATION</strong><span class="text-lg text-sturlite-navy">Sturlite Switch is new, but Sturlite itself is not new to electricals.</span></div>
+                                <div><strong class="text-gray-400 block mb-1">TENSION</strong><span class="text-lg text-sturlite-navy">New product category. Established parent ecosystem.</span></div>
+                            </div>
+                            <div class="space-y-4">
+                                <div><strong class="text-sturlite-orange block mb-1">PROVOCATION</strong><span class="text-2xl font-bold tracking-tight text-sturlite-navy leading-tight">THE SWITCH IS NEW. THE ELECTRICAL EXPERIENCE BEHIND IT ISN'T.</span></div>
+                                <div><strong class="text-gray-400 block mb-1">EVIDENCE</strong><span class="text-gray-600">14+ years | 19+ states | 14,000+ dealers</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Route 3 -->
+                    <div class="border border-gray-200 p-8 rounded-xl bg-white hover:shadow-lg transition-shadow">
+                        <div class="flex flex-wrap items-center gap-4 mb-6">
+                            <span class="bg-sturlite-navy text-white text-xs font-bold px-3 py-1 rounded-full">ROUTE 03</span>
+                            <h3 class="text-xl font-bold">LOOK BEYOND THE SWITCH.</h3>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8 text-sm">
+                            <div class="space-y-4">
+                                <div><strong class="text-gray-400 block mb-1">OBSERVATION</strong><span class="text-lg text-sturlite-navy">A switch appears visually simple while the decision involves safety, quality, installation and engineering.</span></div>
+                                <div><strong class="text-gray-400 block mb-1">TENSION</strong><span class="text-lg text-sturlite-navy">What people see is simple. What makes the product trustworthy isn't.</span></div>
+                            </div>
+                            <div class="space-y-4">
+                                <div><strong class="text-sturlite-orange block mb-1">PROVOCATION</strong><span class="text-2xl font-bold tracking-tight text-sturlite-navy leading-tight">A SWITCH CAN LOOK RIGHT AND STILL RAISE THE WRONG QUESTIONS.</span></div>
+                                <div><strong class="text-gray-400 block mb-1">EVIDENCE</strong><span class="text-gray-600">Technical specifications, QC processes and verified product information.</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Route 5 / Research-led -->
+                     <div class="border border-gray-200 p-8 rounded-xl bg-white hover:shadow-lg transition-shadow">
+                        <div class="flex flex-wrap items-center gap-4 mb-6">
+                            <span class="bg-gray-400 text-white text-xs font-bold px-3 py-1 rounded-full">RESEARCH-LED</span>
+                            <h3 class="text-xl font-bold">THE FINAL FINISH.</h3>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8 text-sm">
+                            <div class="space-y-4">
+                                <div><strong class="text-gray-400 block mb-1">OBSERVATION</strong><span class="text-lg text-sturlite-navy">People spend considerable time debating paint, furniture and tiles, but switches can remain an afterthought.</span></div>
+                                <div><strong class="text-gray-400 block mb-1">TENSION</strong><span class="text-lg text-sturlite-navy">A visible design element can receive invisible consideration.</span></div>
+                            </div>
+                            <div class="space-y-4">
+                                <div><strong class="text-sturlite-orange block mb-1">PROVOCATION</strong><span class="text-2xl font-bold tracking-tight text-sturlite-navy leading-tight">DON'T LET AN AFTERTHOUGHT FINISH YOUR WALL.</span></div>
+                                <div><strong class="text-gray-400 block mb-1">IDEA</strong><span class="text-gray-600">Reposition switches as interior design hardware.</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="content-system" class="max-w-5xl mx-auto px-6 py-24 editorial-border fade-in-section">
+            <div class="mb-12 text-sm font-semibold tracking-widest text-sturlite-orange uppercase">03 / Implementation</div>
+            <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-12">THE CONTENT SYSTEM</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b-2 border-sturlite-navy">
+                            <th class="py-4 pr-6 text-sm font-bold tracking-widest text-gray-400 uppercase w-1/3">FORMAT</th>
+                            <th class="py-4 px-6 text-sm font-bold tracking-widest text-gray-400 uppercase w-1/6">COUNT</th>
+                            <th class="py-4 pl-6 text-sm font-bold tracking-widest text-gray-400 uppercase">ROLE</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-lg font-medium text-sturlite-navy">
+                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-6 pr-6">Direct videos / Reels</td>
+                            <td class="py-6 px-6">5–6</td>
+                            <td class="py-6 pl-6 text-gray-600">Launch energy + human proof</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-6 pr-6">Statics</td>
+                            <td class="py-6 px-6">4</td>
+                            <td class="py-6 pl-6 text-gray-600">Provocation + credibility</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-6 pr-6">Carousels</td>
+                            <td class="py-6 px-6">3</td>
+                            <td class="py-6 pl-6 text-gray-600">Category authority + useful information</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-6 pr-6">Event / community film</td>
+                            <td class="py-6 px-6">1</td>
+                            <td class="py-6 pl-6 text-gray-600">Social proof</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-6 pr-6">Flexible slots</td>
+                            <td class="py-6 px-6">1–2</td>
+                            <td class="py-6 pl-6 text-gray-600">Best remaining event/testimonial assets</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p class="mt-8 text-sm font-bold text-sturlite-orange tracking-wide uppercase">
+                Important: Do not force every available video into the calendar. Use only videos that perform a clear communication job.
+            </p>
+        </section>
+
+        <section id="calendar" class="max-w-6xl mx-auto px-6 py-24 editorial-border fade-in-section">
+            <div class="mb-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+                <div>
+                    <div class="mb-4 text-sm font-semibold tracking-widest text-sturlite-orange uppercase">04 / Execution</div>
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight">15-DAY CALENDAR</h2>
+                </div>
+                <div class="text-sm font-medium text-gray-500">Click any day to view exact content.</div>
+            </div>
+
+            <!-- Filters -->
+            <div class="mb-12 space-y-6">
+                <div>
+                    <span class="text-xs font-bold tracking-widest text-gray-400 uppercase mr-4 block mb-2 md:inline md:mb-0">PHASE:</span>
+                    <div class="flex flex-wrap gap-2" id="phase-filters">
+                        <button class="filter-btn active border border-gray-300 px-4 py-1.5 rounded-full text-sm font-medium" data-filter="ALL">ALL</button>
+                        <button class="filter-btn border border-gray-300 px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:border-gray-400" data-filter="NOTICE">NOTICE</button>
+                        <button class="filter-btn border border-gray-300 px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:border-gray-400" data-filter="BELIEVE">BELIEVE</button>
+                        <button class="filter-btn border border-gray-300 px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:border-gray-400" data-filter="QUESTION">QUESTION</button>
+                        <button class="filter-btn border border-gray-300 px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:border-gray-400" data-filter="PROVE">PROVE</button>
+                        <button class="filter-btn border border-gray-300 px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:border-gray-400" data-filter="REMEMBER">REMEMBER</button>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-xs font-bold tracking-widest text-gray-400 uppercase mr-4 block mb-2 md:inline md:mb-0">FORMAT:</span>
+                    <div class="flex flex-wrap gap-2" id="format-filters">
+                        <button class="filter-btn active border border-gray-300 px-4 py-1.5 rounded-full text-sm font-medium" data-filter="ALL">ALL</button>
+                        <button class="filter-btn border border-gray-300 px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:border-gray-400" data-filter="STATIC">STATIC</button>
+                        <button class="filter-btn border border-gray-300 px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:border-gray-400" data-filter="CAROUSEL">CAROUSEL</button>
+                        <button class="filter-btn border border-gray-300 px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:border-gray-400" data-filter="REEL">REEL</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calendar Grid (Populated by JS) -->
+            <div id="calendar-grid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <!-- Cards will be injected here -->
+            </div>
+        </section>
+
+        <section id="asset-map" class="max-w-5xl mx-auto px-6 py-24 editorial-border fade-in-section bg-gray-50 rounded-3xl mt-12 mb-24">
+            <div class="mb-12 text-sm font-semibold tracking-widest text-sturlite-orange uppercase text-center">05 / Logistics</div>
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center">ASSET DEPENDENCY MAP</h2>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-bold tracking-widest text-sturlite-navy uppercase mb-4 border-b border-gray-300 pb-2">AVAILABLE NOW</h3>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="text-sturlite-orange mr-2">✓</span> Product stills</li>
+                        <li class="flex items-start"><span class="text-sturlite-orange mr-2">✓</span> Launch footage</li>
+                        <li class="flex items-start"><span class="text-sturlite-orange mr-2">✓</span> Brand legacy data</li>
+                        <li class="flex items-start"><span class="text-sturlite-orange mr-2">✓</span> Dealer network statistics</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold tracking-widest text-sturlite-navy uppercase mb-4 border-b border-gray-300 pb-2">REQUIRES PRODUCT INFO</h3>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="text-gray-400 mr-2">○</span> Technical engineering details</li>
+                        <li class="flex items-start"><span class="text-gray-400 mr-2">○</span> Safety specifications</li>
+                        <li class="flex items-start"><span class="text-gray-400 mr-2">○</span> QC process details</li>
+                        <li class="flex items-start"><span class="text-gray-400 mr-2">○</span> Verified product claims</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold tracking-widest text-sturlite-navy uppercase mb-4 border-b border-gray-300 pb-2">REQUIRES TESTIMONIALS</h3>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="text-gray-400 mr-2">○</span> Electrician quotes</li>
+                        <li class="flex items-start"><span class="text-gray-400 mr-2">○</span> Distributor validation</li>
+                        <li class="flex items-start"><span class="text-gray-400 mr-2">○</span> Designer perspectives</li>
+                        <li class="flex items-start"><span class="text-gray-400 mr-2">○</span> Customer perspectives</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold tracking-widest text-sturlite-navy uppercase mb-4 border-b border-gray-300 pb-2">REQUIRES EVENT ASSETS</h3>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="text-gray-400 mr-2">○</span> Event recap video</li>
+                        <li class="flex items-start"><span class="text-gray-400 mr-2">○</span> Live crowd reactions</li>
+                        <li class="flex items-start"><span class="text-gray-400 mr-2">○</span> On-stage announcements</li>
+                        <li class="flex items-start"><span class="text-gray-400 mr-2">○</span> Launch photographs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-5xl mx-auto px-6 py-32 text-center fade-in-section">
+            <h1 class="text-4xl md:text-7xl font-bold tracking-tightest leading-none mb-6 text-sturlite-navy">
+                THE LAUNCH CREATES ATTENTION.
+            </h1>
+            <h1 class="text-4xl md:text-7xl font-bold tracking-tightest leading-none mb-6 text-sturlite-navy">
+                THE CONTENT BUILDS BELIEF.
+            </h1>
+            <h1 class="text-4xl md:text-7xl font-bold tracking-tightest leading-none mb-24 text-sturlite-orange">
+                THE PEOPLE BUILD TRUST.
+            </h1>
+            
+            <div class="inline-block border-t-2 border-sturlite-navy pt-8 mt-8">
+                <h2 class="text-2xl tracking-widest font-bold text-gray-400 uppercase mb-2">STURLITE SWITCH</h2>
+                <p class="text-3xl font-bold text-sturlite-navy">THE BIG SWITCH.</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="content-modal" class="fixed inset-0 bg-white/95 backdrop-blur-sm z-[100] hidden flex-col transition-opacity duration-300 opacity-0">
+        <!-- Modal Header -->
+        <div class="flex justify-between items-center p-6 border-b border-gray-200">
+            <div class="flex items-center space-x-4">
+                <span id="modal-day" class="text-sturlite-orange font-bold text-xl tracking-tight">DAY X</span>
+                <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                <span id="modal-phase" class="text-xs font-bold tracking-widest text-gray-500 uppercase">PHASE</span>
+                <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                <span id="modal-format" class="text-xs font-bold tracking-widest text-sturlite-navy uppercase bg-gray-100 px-2 py-1 rounded">FORMAT</span>
+            </div>
+            <button id="close-modal" class="text-gray-500 hover:text-sturlite-orange transition-colors p-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+
+        <!-- Modal Body Layout -->
+        <div class="flex-1 overflow-y-auto">
+            <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row gap-16">
+                
+                <!-- Left: Strategic Context -->
+                <div class="lg:w-1/3 flex flex-col space-y-8">
+                    <div>
+                        <h4 class="text-xs font-bold tracking-widest text-gray-400 uppercase mb-2 border-b border-gray-200 pb-2">STRATEGIC PURPOSE</h4>
+                        <div id="modal-strategic-context" class="space-y-4 mt-4 text-sm text-sturlite-navy">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold tracking-widest text-gray-400 uppercase mb-2 border-b border-gray-200 pb-2">ASSET DETAILS</h4>
+                        <div id="modal-asset-details" class="space-y-4 mt-4 text-sm text-gray-600">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Visual Mockup Area -->
+                <div class="lg:w-2/3 flex flex-col items-center justify-center bg-gray-50 rounded-2xl p-8 min-h-[500px] border border-gray-200 relative">
+                    
+                    <div id="platform-toggle" class="absolute top-6 left-6 hidden flex space-x-2">
+                         <button class="text-xs font-bold px-3 py-1 rounded bg-sturlite-navy text-white">IG/LI</button>
+                    </div>
+
+                    <!-- Dynamic Render Area -->
+                    <div id="mockup-container" class="w-full flex justify-center items-center">
+                        <!-- Content injected here based on format -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- DATA DEFINITION ---
+        const contentData = [
+            {
+                day: 1, phase: 'NOTICE', format: 'REEL', title: 'The Big Switch — Launch Film',
+                problem: 'Category indifference.',
+                provocation: 'Why should the smallest detail get the least attention?',
+                idea: 'The Big Switch.',
+                copy: 'THE BIG SWITCH\n\nA new range. A new chapter.',
+                assetSource: 'Product Launch Highlight footage.',
+                status: 'Available Now',
+                type: 'reel',
+                reelThumbText: 'THE BIG SWITCH'
+            },
+            {
+                day: 2, phase: 'NOTICE', format: 'STATIC', title: 'Why should the smallest detail get the least attention?',
+                problem: 'Category indifference.',
+                observation: 'Small visible details are often overlooked.',
+                provocation: 'Why should the smallest detail get the least attention?',
+                idea: 'The Big Switch.',
+                copy: 'WHY SHOULD THE SMALLEST DETAIL\nGET THE LEAST ATTENTION?\n\nTHE BIG SWITCH\n\nIntroducing Sturlite Switch.',
+                evidence: 'Modular switches represented 68.4% of India\'s electrical switches market in 2025 according to IMARC.',
+                status: 'Available Now',
+                type: 'static'
+            },
+            {
+                day: 3, phase: 'NOTICE', format: 'CAROUSEL', title: 'The switch has changed. Have the way we choose it?',
+                problem: 'Habitual purchasing behavior.',
+                provocation: 'The category has moved, but our questions haven\'t.',
+                copy: 'See carousel mockup.',
+                type: 'carousel',
+                slides: [
+                    "THE SWITCH HAS CHANGED.\n\nBut have we changed the way we choose one?",
+                    "UTILITY IS BASELINE.\n\nA switch has to work. That's where the conversation starts.",
+                    "THEN CAME MODULAR.\n\n68.4% of India's electrical-switch market was modular in 2025.",
+                    "NOW THE SWITCH HAS ENTERED THE ROOM.\n\nColours. Finishes. Form. Feel.",
+                    "SO WHAT ARE PEOPLE REALLY CHOOSING?\n\nNot just a switch. A combination of aesthetics, safety, functionality and experience.",
+                    "THE CATEGORY HAS MOVED.\n\nThe question isn't whether a switch should look good.\n\nIt's what else it should bring to the wall.",
+                    "STURLITE SWITCH\n\nA new range for the way spaces are being built today."
+                ]
+            },
+            {
+                day: 4, phase: 'BELIEVE', format: 'STATIC', title: 'New on the wall. Not new to electricals.',
+                problem: 'Why should people believe a new switch brand?',
+                provocation: 'The switch is new. The electrical experience behind it isn\'t.',
+                copy: 'NEW ON THE WALL.\nNOT NEW TO ELECTRICALS.\n\nThe switch is new.\nThe electrical experience behind it isn\'t.\n\n14+ YEARS\n19+ STATES\n14,000+ DEALERS',
+                note: 'Figures are Sturlite\'s published wider-business figures.',
+                status: 'Available Now',
+                type: 'static'
+            },
+            {
+                day: 5, phase: 'BELIEVE', format: 'REEL', title: 'Meet the people who were there.',
+                problem: 'Lack of initial social proof.',
+                copy: 'WHAT MAKES A SWITCH WORTH CHOOSING?',
+                assetSource: 'Event footage. Genuine answers only.',
+                status: 'Requires Event Assets',
+                type: 'reel',
+                reelThumbText: 'WHAT MAKES A SWITCH\nWORTH CHOOSING?'
+            },
+            {
+                day: 6, phase: 'BELIEVE', format: 'CAROUSEL', title: 'A switch doesn\'t reach the wall alone.',
+                problem: 'Isolating the purchase decision.',
+                type: 'carousel',
+                slides: [
+                    "A SWITCH DOESN'T REACH THE WALL ALONE.",
+                    "Someone makes it.",
+                    "Someone stocks it.",
+                    "Someone recommends it.",
+                    "Someone installs it.",
+                    "Someone lives with it.",
+                    "SO WHO REALLY CHOOSES THE SWITCH?\n\nBrand. Dealer. Electrician. Designer. Homeowner.",
+                    "THAT'S WHY TRUST ISN'T BUILT IN ONE PLACE.\n\nIt is built across the ecosystem."
+                ]
+            },
+            {
+                day: 7, phase: 'QUESTION', format: 'STATIC', title: 'A switch can look right. But is it the right choice?',
+                problem: 'Superficial evaluation.',
+                provocation: 'A switch can look right and still raise the wrong questions.',
+                copy: 'A SWITCH CAN LOOK RIGHT.\n\nBUT IS IT THE RIGHT CHOICE?\n\nLOOK BEYOND THE SWITCH.',
+                evidence: 'Use only verified Sturlite technical info.',
+                status: 'Requires Product Information',
+                type: 'static'
+            },
+            {
+                day: 8, phase: 'QUESTION', format: 'CAROUSEL', title: 'What are people really choosing when they choose a switch?',
+                type: 'carousel',
+                slides: [
+                    "WHAT ARE YOU REALLY CHOOSING WHEN YOU CHOOSE A SWITCH?",
+                    "LOOKS?\n\nColours. Finishes. Forms.",
+                    "FEEL?\n\nThe way it feels when you use it.",
+                    "FUNCTION?\n\nThe combination of controls you actually need.",
+                    "SAFETY?\n\nThe things you may not notice until they matter.",
+                    "TRUST?\n\nThe brand behind the product.",
+                    "IT'S NEVER JUST ONE THING.\n\nThat's what makes a switch worth choosing."
+                ]
+            },
+            {
+                day: 9, phase: 'QUESTION', format: 'REEL', title: 'Look Beyond the Switch.',
+                copy: 'Product/event footage with text overlays.',
+                status: 'Requires Product Info & Footage',
+                type: 'reel',
+                reelThumbText: 'LOOK BEYOND\nTHE SWITCH.'
+            },
+            {
+                day: 10, phase: 'PROVE', format: 'REEL', title: 'Ask the People Who Know — Electrician',
+                copy: 'Feature professional voice.',
+                status: 'Requires Testimonials',
+                type: 'reel',
+                reelThumbText: 'WHO REALLY\nCHOOSES THE SWITCH?'
+            },
+            {
+                day: 11, phase: 'PROVE', format: 'REEL', title: 'Ask the People Who Know — Distributor',
+                copy: 'Feature professional voice.',
+                status: 'Requires Testimonials',
+                type: 'reel',
+                reelThumbText: 'WHO REALLY\nCHOOSES THE SWITCH?'
+            },
+            {
+                day: 12, phase: 'PROVE', format: 'CAROUSEL', title: 'Who really chooses the switch?',
+                copy: 'Summary of professional opinions.',
+                status: 'Requires Testimonials',
+                type: 'carousel',
+                slides: ["WHO REALLY CHOOSES THE SWITCH?", "Compilation of insights from previous days."]
+            },
+            {
+                day: 13, phase: 'REMEMBER', format: 'STATIC', title: 'The switch is new. The electrical experience behind it isn\'t.',
+                copy: 'THE SWITCH IS NEW.\n\nTHE ELECTRICAL EXPERIENCE\nBEHIND IT ISN\'T.',
+                assetSource: 'Product image with subtle electrical ecosystem visual language.',
+                type: 'static'
+            },
+            {
+                day: 14, phase: 'REMEMBER', format: 'REEL', title: 'This is what The Big Switch looked like.',
+                copy: 'Crowd reactions, launch moments, reveals.',
+                status: 'Requires Event Assets',
+                type: 'reel',
+                reelThumbText: 'THIS IS WHAT\nTHE BIG SWITCH\nLOOKED LIKE.'
+            },
+            {
+                day: 15, phase: 'REMEMBER', format: 'REEL', title: 'The Big Switch — What comes next',
+                copy: 'Transition to always-on.',
+                status: 'Available',
+                type: 'reel',
+                reelThumbText: 'THE BIG SWITCH\nWAS ONLY THE BEGINNING.'
+            }
+        ];
+
+        // --- DOM ELEMENTS ---
+        const calendarGrid = document.getElementById('calendar-grid');
+        const phaseFilters = document.querySelectorAll('#phase-filters .filter-btn');
+        const formatFilters = document.querySelectorAll('#format-filters .filter-btn');
+        const modal = document.getElementById('content-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+        const progressBar = document.getElementById('progress-bar');
+
+        let currentPhaseFilter = 'ALL';
+        let currentFormatFilter = 'ALL';
+
+        // --- STREAMING_CHUNK:Initialization and Rendering Functions ---
+        
+        function getPhaseColor(phase) {
+            const colors = {
+                'NOTICE': 'bg-yellow-100 text-yellow-800 border-yellow-200',
+                'BELIEVE': 'bg-blue-100 text-blue-800 border-blue-200',
+                'QUESTION': 'bg-purple-100 text-purple-800 border-purple-200',
+                'PROVE': 'bg-green-100 text-green-800 border-green-200',
+                'REMEMBER': 'bg-orange-100 text-orange-800 border-orange-200'
+            };
+            return colors[phase] || 'bg-gray-100 text-gray-800 border-gray-200';
+        }
+
+        function renderCalendar() {
+            calendarGrid.innerHTML = '';
+            
+            contentData.forEach(item => {
+                // Filter logic
+                if (currentPhaseFilter !== 'ALL' && item.phase !== currentPhaseFilter) return;
+                if (currentFormatFilter !== 'ALL' && item.format !== currentFormatFilter) return;
+
+                const card = document.createElement('div');
+                card.className = 'group bg-white border border-gray-200 rounded-xl p-5 hover:border-sturlite-orange hover:shadow-md transition-all cursor-pointer flex flex-col h-full';
+                card.onclick = () => openModal(item);
+
+                const phaseClass = getPhaseColor(item.phase);
+
+                card.innerHTML = `
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="text-3xl font-bold text-gray-200 group-hover:text-sturlite-orange transition-colors">
+                            ${String(item.day).padStart(2, '0')}
+                        </div>
+                        <div class="flex flex-col items-end gap-2">
+                            <span class="text-[10px] font-bold tracking-widest px-2 py-1 rounded-sm uppercase ${phaseClass}">${item.phase}</span>
+                            <span class="text-[10px] font-bold tracking-widest text-gray-500 bg-gray-50 px-2 py-1 rounded border border-gray-100">${item.format}</span>
+                        </div>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-semibold text-sturlite-navy leading-snug text-sm">${item.title}</h4>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs font-medium text-sturlite-orange flex items-center group-hover:translate-x-1 transition-transform">
+                        View Content →
+                    </div>
+                `;
+                calendarGrid.appendChild(card);
+            });
+        }
+
+        // --- STREAMING_CHUNK:Filter Logic ---
+        function setupFilters() {
+            phaseFilters.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    phaseFilters.forEach(b => {
+                        b.classList.remove('active', 'bg-sturlite-orange', 'text-white', 'border-sturlite-orange');
+                        b.classList.add('text-gray-600');
+                    });
+                    const target = e.target;
+                    target.classList.add('active', 'bg-sturlite-orange', 'text-white', 'border-sturlite-orange');
+                    target.classList.remove('text-gray-600');
+                    currentPhaseFilter = target.dataset.filter;
+                    renderCalendar();
+                });
+            });
+
+            formatFilters.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    formatFilters.forEach(b => {
+                        b.classList.remove('active', 'bg-sturlite-orange', 'text-white', 'border-sturlite-orange');
+                        b.classList.add('text-gray-600');
+                    });
+                    const target = e.target;
+                    target.classList.add('active', 'bg-sturlite-orange', 'text-white', 'border-sturlite-orange');
+                    target.classList.remove('text-gray-600');
+                    currentFormatFilter = target.dataset.filter;
+                    renderCalendar();
+                });
+            });
+        }
+
+        // --- STREAMING_CHUNK:Modal Logic & Renderers ---
+        function openModal(item) {
+            document.getElementById('modal-day').innerText = `DAY ${String(item.day).padStart(2, '0')}`;
+            document.getElementById('modal-phase').innerText = item.phase;
+            document.getElementById('modal-format').innerText = item.format;
+
+            // Populate Strategic Context Left Sidebar
+            const stratContext = document.getElementById('modal-strategic-context');
+            stratContext.innerHTML = '';
+            if(item.problem) stratContext.innerHTML += `<div class="mb-2"><strong class="text-gray-900 block">Problem:</strong> ${item.problem}</div>`;
+            if(item.observation) stratContext.innerHTML += `<div class="mb-2"><strong class="text-gray-900 block">Observation:</strong> ${item.observation}</div>`;
+            if(item.tension) stratContext.innerHTML += `<div class="mb-2"><strong class="text-gray-900 block">Tension:</strong> ${item.tension}</div>`;
+            if(item.provocation) stratContext.innerHTML += `<div class="mb-2"><strong class="text-gray-900 block">Provocation:</strong> <span class="text-sturlite-orange font-medium">${item.provocation}</span></div>`;
+            if(item.idea) stratContext.innerHTML += `<div class="mb-2"><strong class="text-gray-900 block">Idea:</strong> ${item.idea}</div>`;
+
+            // Populate Asset Details
+            const assetDetails = document.getElementById('modal-asset-details');
+            assetDetails.innerHTML = '';
+            if(item.assetSource) assetDetails.innerHTML += `<div class="mb-2"><strong class="block text-gray-800">Source:</strong> ${item.assetSource}</div>`;
+            if(item.evidence) assetDetails.innerHTML += `<div class="mb-2"><strong class="block text-gray-800">Evidence/Data:</strong> ${item.evidence}</div>`;
+            if(item.status) assetDetails.innerHTML += `<div class="mb-2"><strong class="block text-gray-800">Status:</strong> <span class="inline-block px-2 py-1 bg-gray-200 rounded text-xs mt-1 font-bold">${item.status}</span></div>`;
+
+            const mockupContainer = document.getElementById('mockup-container');
+            mockupContainer.innerHTML = '';
+
+            // Render specific format mockup
+            if (item.type === 'static') {
+                mockupContainer.innerHTML = renderStaticMockup(item);
+            } else if (item.type === 'carousel') {
+                mockupContainer.innerHTML = renderCarouselMockup(item);
+                setupCarouselLogic();
+            } else if (item.type === 'reel') {
+                mockupContainer.innerHTML = renderReelMockup(item);
+            }
+
+            modal.classList.remove('hidden');
+            // Small delay to allow display:block to apply before opacity transition
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+            }, 10);
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        closeModalBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        // --- STREAMING_CHUNK:Mockup Render Helpers ---
+        function renderStaticMockup(item) {
+            return `
+                <div class="w-full max-w-[400px] aspect-square bg-[#F3F4F6] border border-gray-300 shadow-xl flex items-center justify-center p-8 relative overflow-hidden group">
+                    <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiMwMDAiLz48L3N2Zz4=')]"></div>
+                    <div class="absolute top-4 left-4 flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-sturlite-navy rounded-full"></div>
+                        <div class="text-xs font-bold text-sturlite-navy">Sturlite Switch</div>
+                    </div>
+                    <div class="relative z-10 w-full text-center">
+                        <p class="exact-copy-text text-xl md:text-2xl font-bold tracking-tight text-sturlite-navy leading-snug mx-auto">${item.copy}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderCarouselMockup(item) {
+            if(!item.slides) return '<div class="text-gray-400">Carousel content pending</div>';
+            
+            let slidesHtml = item.slides.map((slide, index) => `
+                <div class="carousel-slide w-full h-full flex flex-col items-center justify-center p-12 bg-white relative">
+                    <div class="absolute top-6 left-6 text-xs font-bold text-gray-400 tracking-widest">${index + 1} / ${item.slides.length}</div>
+                    <p class="exact-copy-text text-2xl font-bold tracking-tight text-sturlite-navy text-center max-w-[80%]">${slide}</p>
+                </div>
+            `).join('');
+
+            return `
+                <div class="w-full max-w-[500px] aspect-square bg-white border border-gray-300 shadow-xl relative overflow-hidden">
+                    <div id="carousel-track" class="carousel-container w-full h-full flex overflow-x-auto hide-scrollbar snap-x snap-mandatory">
+                        ${slidesHtml}
+                    </div>
+                    
+                    <button id="car-prev" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 shadow rounded-full flex items-center justify-center hover:bg-sturlite-orange hover:text-white transition-colors z-10">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button id="car-next" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 shadow rounded-full flex items-center justify-center hover:bg-sturlite-orange hover:text-white transition-colors z-10">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+
+                    <div id="car-dots" class="absolute bottom-6 left-0 right-0 flex justify-center space-x-2 z-10">
+                        ${item.slides.map((_, i) => `<div class="w-2 h-2 rounded-full ${i===0 ? 'bg-sturlite-orange' : 'bg-gray-300'} transition-colors dot"></div>`).join('')}
+                    </div>
+                </div>
+                <style>
+                    /* Hide scrollbar for carousel but keep functionality */
+                    .hide-scrollbar::-webkit-scrollbar { display: none; }
+                    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+                </style>
+            `;
+        }
+
+        function setupCarouselLogic() {
+            const track = document.getElementById('carousel-track');
+            const prevBtn = document.getElementById('car-prev');
+            const nextBtn = document.getElementById('car-next');
+            const dots = document.querySelectorAll('#car-dots .dot');
+            if(!track) return;
+
+            let currentIndex = 0;
+            const updateUI = () => {
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('bg-sturlite-orange', i === currentIndex);
+                    dot.classList.toggle('bg-gray-300', i !== currentIndex);
+                });
+            };
+
+            track.addEventListener('scroll', () => {
+                const scrollLeft = track.scrollLeft;
+                const slideWidth = track.clientWidth;
+                currentIndex = Math.round(scrollLeft / slideWidth);
+                updateUI();
+            });
+
+            nextBtn.addEventListener('click', () => {
+                track.scrollBy({ left: track.clientWidth, behavior: 'smooth' });
+            });
+            prevBtn.addEventListener('click', () => {
+                track.scrollBy({ left: -track.clientWidth, behavior: 'smooth' });
+            });
+        }
+
+        function renderReelMockup(item) {
+            return `
+                <div class="phone-mockup group cursor-pointer" onclick="this.querySelector('.play-icon').classList.toggle('scale-110'); this.querySelector('.play-icon').classList.toggle('text-sturlite-orange');">
+                    <!-- Screen Background (Placeholder for video) -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-sturlite-navy flex items-center justify-center overflow-hidden">
+                        <!-- Abstract shapes for placeholder -->
+                        <div class="absolute w-64 h-64 bg-white opacity-5 rounded-full -top-10 -right-10 blur-xl"></div>
+                        <div class="absolute w-40 h-40 bg-sturlite-orange opacity-10 rounded-full bottom-20 -left-10 blur-xl"></div>
+                        
+                        <div class="text-center p-6 z-10 relative w-full h-full flex flex-col justify-center">
+                           <h3 class="exact-copy-text text-3xl font-extrabold text-white tracking-tight uppercase leading-none drop-shadow-lg">${item.reelThumbText || item.title}</h3>
+                        </div>
+                    </div>
+
+                    <!-- UI Overlay -->
+                    <div class="absolute inset-0 pointer-events-none flex flex-col justify-between p-4 z-20">
+                        <div class="flex justify-between items-center text-white/80 text-xs font-medium">
+                            <span>0:15 / Placeholder</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </div>
+                        
+                        <!-- Play Button Center -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center play-icon transition-all duration-300 text-white">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="ml-1"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        </div>
+
+                        <div class="mt-auto mb-4 text-white">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <div class="w-8 h-8 rounded-full bg-white/20"></div>
+                                <span class="font-bold text-sm drop-shadow">Sturlite Switch</span>
+                            </div>
+                            <p class="text-sm line-clamp-2 drop-shadow font-medium">${item.copy.split('\n')[0]}</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center text-xs font-medium text-gray-400 mt-4 max-w-[320px]">Click phone to simulate interaction. Video assets required for final build.</p>
+            `;
+        }
+
+
+        // --- STREAMING_CHUNK:Global Event Listeners and Effects ---
+        document.addEventListener('DOMContentLoaded', () => {
+            renderCalendar();
+            setupFilters();
+
+            // Progress Bar Logic
+            window.addEventListener('scroll', () => {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                progressBar.style.width = scrolled + "%";
+            });
+
+            // Fade In on Scroll Observer
+            const fadeElements = document.querySelectorAll('.fade-in-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        // Optional: stop observing once faded in
+                        // observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            });
+
+            fadeElements.forEach(el => observer.observe(el));
+        });
+
+    </script>
+</body>
+</html>
